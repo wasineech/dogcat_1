@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e9e9e9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:background="@color/colorNav">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_marginLeft"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:paddingLeft="150dp"
+                android:text="Search"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="40dp"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="กรอกข้อมูลที่ต้องการค้นหา "
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="Dog"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/cat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Cat"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_gray"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginRight="60px"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/gender">
+                </Spinner>
+
+                <EditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_gray"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginRight="60px"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/txtBreed"
+                    android:hint="Breed"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_design"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginRight="60px"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/province">
+                </Spinner>
+
+                <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C54953"
+                    android:id="@+id/btnSearch"
+                    android:padding="10dp"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginRight="60px"
+                    android:textColor="#ffffff"
+                    android:text="SEARCH"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

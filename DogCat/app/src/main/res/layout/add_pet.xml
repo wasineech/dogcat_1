@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F58F81"
+    android:gravity="center"
+    tools:context=".AddPetActivity">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dogcat"/>
+
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Dog"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Cat"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/txtName"
+        android:hint="Name"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/gender">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F58F81">
+
+
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_design"
+            android:layout_marginTop="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="80dp"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="30px"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/txtBirthday"
+            android:hint="Birthday"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="#ffffff"
+            android:textSize="20dp"
+            android:text="SELECT DATE"
+            android:id="@+id/btn_date" />
+
+    </LinearLayout>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/txtBreed"
+        android:hint="Breed"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F58F81">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"/>
+
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60px"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT IMAGE"
+        />
+
+    </LinearLayout>
+
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bt"
+        android:id="@+id/btnRegister"
+        android:padding="10dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:textColor="#ffffff"
+        android:text="REGISTER"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+</LinearLayout>
